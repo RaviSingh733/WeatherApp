@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Popins", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ body {
 
 body::before {
   content: "";
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,8 +37,8 @@ body::before {
   text-align: center;
   display: flex;
   flex-direction: column;
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 
 .search {
@@ -72,7 +72,7 @@ body::before {
 }
 
 .search button img {
-  width: 16px;
+  width: 35px;
 }
 
 .location-btn {
@@ -89,7 +89,7 @@ body::before {
 }
 
 .weather-icon {
-  width: 170px;
+  width: 130px;
   margin-top: 30px;
 }
 
@@ -120,8 +120,7 @@ body::before {
 
 .col img {
   width: 40px;
- margin-right: 20px;
-  
+  margin-right: 20px;
 }
 
 .humidity,
@@ -154,7 +153,6 @@ body::before {
   height: 100px;
   animation: spin 1s linear infinite;
   display: flex;
-  
 }
 
 @keyframes spin {
@@ -204,4 +202,112 @@ body::before {
 .created-by:hover p {
   color: #0056b3;
   cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+  .card {
+    margin: 50px auto;
+    padding: 30px;
+  }
+
+  .search input {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+
+  .search button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .weather h1 {
+    font-size: 60px;
+  }
+
+  .weather h2 {
+    font-size: 30px;
+  }
+
+  .details {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .col img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 20px;
+  }
+
+  .loader {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    margin: 80px auto;
+    padding: 35px;
+  }
+
+  .weather h1 {
+    font-size: 70px;
+  }
+
+  .weather h2 {
+    font-size: 38px;
+  }
+
+  .details {
+    padding: 15px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 22px;
+  }
+
+  .loader {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .card {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 120px;
+    padding: 40px;
+  }
+
+  .weather h1 {
+    font-size: 80px;
+  }
+
+  .weather h2 {
+    font-size: 45px;
+  }
+
+  .details {
+    padding: 20px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 25px;
+  }
+
+  .loader {
+    width: 100px;
+    height: 100px;
+  }
 }
